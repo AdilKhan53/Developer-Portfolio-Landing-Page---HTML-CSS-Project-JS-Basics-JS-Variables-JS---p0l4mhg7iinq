@@ -1,1 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;700&family=Poppins:wght@300;500;700&display=swap');
+body{
+    margin: 0;
+    background-color:  black;
+    font-family: 'Poppins', sans-serif;
+}
 
+/* hero style start */
+.hero{
+    background-image: url(../imageforb.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    color: rgb(186, 186, 186);
+    height: 350px;
+}
+.hero span{
+    font-size: 60px;
+}
+.hero h1{
+    font-size: 60px;
+}
+
+/* blackbox style start */
+.blackbox{
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: black;
+    color:  rgb(186, 186, 186);
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+.blackbox:hover{
+    transform: scale(1.1);
+    background-color: rgb(56, 3, 3);
+}
+
+/* card container style start */
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    border: 2px groove black;
+    margin: 4px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    color: grey;
+}
+.card:hover{
+    transform: scale(1.02);
+    background-color: rgb(56, 3, 3);
+}
+img{
+    width: 100%;    
+} 
+
+/* bottom style start */
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    gap: 50px;
+}
+.contact{
+    text-align: center;
+    align-items: center;
+    border: 2px groove grey;
+    padding: 20px;
+    margin: 10px;
+    color: rgb(186, 186, 186);
+    border-radius: 10px;
+}
+.about{
+    text-align: center;
+    align-items: center;
+    border: 2px groove grey;
+    padding: 20px;
+    margin: 10px;
+    color: rgb(186, 186, 186);
+    border-radius: 10px;
+}
+.contact:hover, .about:hover{
+    transform: scale(1.02);
+    background-color: rgb(56, 3, 3);
+}
+@media screen and (max-width:600px) {
+    .hero{
+        width: auto;
+    }
+    .blackbox{
+        width: 100%;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .bottom{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+}
